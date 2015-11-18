@@ -45,4 +45,4 @@
 
     --------------------------------------------------------------------
 
-###### <i> (You can find the example code in <b>main.cpp</b>) </i>
+###### <i> (You can find the example code in main.cpp) </i>
