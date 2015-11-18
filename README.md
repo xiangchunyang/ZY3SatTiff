@@ -10,11 +10,9 @@
 
    Supported compression type: UNCOMPRESSED, PACKBITS
 
-## How-to-use 
+## How-to-use (In caller function)
 
     --------------------------------------------------------------------
-    
-     // In caller function:
      
      // CHAR fileName[]="F:\\1.tiff";
 
