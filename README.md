@@ -31,11 +31,12 @@
      u16* img_src = new u16[imgSize];
      td.LoadData((byte*)img_src);
 
-     //-- Or if we do NOT known the 'depth' filed:
-
+     // -- Or if we do NOT known the 'depth' filed --
      // int nbytes=td.GetDataByteCount();
      // byte* img_src=new byte[nbytes];
      // td.LoadData(img_src);
+     // --
+
      // td.Release(); // This will bde called automatically (in td.dtor())
      
      // Do something with img_src
