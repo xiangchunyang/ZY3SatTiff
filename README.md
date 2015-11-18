@@ -14,7 +14,7 @@
 
     --------------------------------------------------------------------
      
-     // CHAR fileName[]="F:\\1.tiff";
+     // CHAR fileName[]="F:\\1.tiff"; // your TIFF (full) file name
 
      TiffDecoder  td;
      td.Open(fileName);
