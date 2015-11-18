@@ -4,7 +4,7 @@
    
    Last modified:  2015-08-13 Thur
 
-   Email:   fengyhack@163.com  fengyhack@gmail.com
+   Email:   fengyhack@{163,gmail}.com
    
    Website: [http://fengyh.cn/](http://fenyh.cn/)
 
@@ -36,6 +36,7 @@
      // int nbytes=td.GetDataByteCount();
      // byte* img_src=new byte[nbytes];
      // td.LoadData(img_src);
+     // td.Release(); // This will bde called automatically (in td.dtor())
      
      // Do something with img_src
      
