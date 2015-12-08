@@ -33,7 +33,7 @@ int main(int argc, char** argv)
 			int height = td.GetHeight();
 			int imgSize = width*height;
 
-			printf("File: %s\n width=%d,height=%d\n", fn, width, height);
+			printf("File: %s\nSize: %d*%d\n", fn, width, height);
 
 			u16* srcData = new u16[imgSize];
 			byte* u8 = new byte[imgSize];
@@ -79,12 +79,14 @@ int main(int argc, char** argv)
 			time_t t2 = time(NULL);
 			et = difftime(t2, t1);
 
-			printf("Remapping time: %.2f sec.\n\n", et);
+			printf("Remapping time: %.2f sec.\n", et);
 
 			delete[] srcData;
 			delete[] u8;
 
 			td.Release();
+
+			printf("Done.\n\n");
 		}
 	}
 	catch (exception e)
@@ -92,6 +94,6 @@ int main(int argc, char** argv)
 		puts(e.what());
 	}
 
-	printf("\n====== Tiff Image Decoder ====== \n\n");
+	printf("====== Tiff Image Decoder ====== \n\n");
 	system("pause");
 }
