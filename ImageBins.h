@@ -5,6 +5,4 @@
 
 void SaveAsBin(byte* imgData, int width, int height, const char* fileName);
 
-void LoadFromBin(byte* imgData, int& width, int& height, const char* fileName);
-
 #endif
