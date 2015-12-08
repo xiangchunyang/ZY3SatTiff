@@ -72,6 +72,7 @@ int main(int argc, char** argv)
 			}
 
 			int len = strlen(fn);
+			fn[len - 4] = 'b';
 			fn[len - 2] = 'n';
 			fn[len - 1] = 0;
 			SaveAsBin(u8, width, height, fn);
