@@ -15,24 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bitmapper.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TiffDecoder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ImageBins.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bitmapper.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="TiffDecoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageBins.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,5 @@
 #include "TiffDecoder.h"
-#include "Bitmapper.h"
+#include "ImageBins.h"
 #include <time.h>
 #include <exception>
 using namespace std;
@@ -7,7 +7,7 @@ using namespace std;
 int main(void)
 {
 	char tiffFileName[] = "F:\\Dataset\\ZY3_00\\1.tiff";
-	char bmpFileName[] = "F:\\Dataset\\ZY3_00\\1.bmp";
+	char binFileName[] = "F:\\Dataset\\ZY3_00\\1.bin";
 
 	try
 	{
@@ -57,7 +57,7 @@ int main(void)
 			u8[i] = (byte)((srcData[i] - min)*factor);
 		}
 
-		SaveAsBMP(u8, width, height, bmpFileName);
+		SaveAsBin(u8, width, height, binFileName);
 
 		time_t t2 = time(NULL);
 		et = difftime(t2, t1);
