@@ -96,5 +96,4 @@ int main(int argc, char** argv)
 	}
 
 	printf("======== Tiff Image Decoder ======== \n\n");
-	system("pause");
 }
