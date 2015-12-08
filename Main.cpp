@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 		return -1;
 	}
 
-	printf("====== Tiff Image Decoder ====== \n\n");
+	printf("======== Tiff Image Decoder ======== \n\n");
 
 	char fn[MAX_NAME_LEN] = { 0 };
 
@@ -38,16 +38,16 @@ int main(int argc, char** argv)
 			u16* srcData = new u16[imgSize];
 			byte* u8 = new byte[imgSize];
 
-			printf("Decoding, please wait...\n");
+			printf("Decoding...");
 
 			time_t t0 = time(NULL);
 			td.LoadData((byte*)srcData);
 			time_t t1 = time(NULL);
 			double et = difftime(t1, t0);
 
-			printf("Decoding time: %.2f sec.\n", et);
+			printf("finished. (%.2f sec)\n", et);
 
-			printf("Remapping, please wait...\n");
+			printf("Remapping...");
 
 			u16 min = srcData[0];
 			u16 max = min;
@@ -80,7 +80,7 @@ int main(int argc, char** argv)
 			time_t t2 = time(NULL);
 			et = difftime(t2, t1);
 
-			printf("Remapping time: %.2f sec.\n", et);
+			printf("finished. (%.2f sec)\n", et);
 
 			delete[] srcData;
 			delete[] u8;
@@ -95,6 +95,6 @@ int main(int argc, char** argv)
 		puts(e.what());
 	}
 
-	printf("====== Tiff Image Decoder ====== \n\n");
+	printf("======== Tiff Image Decoder ======== \n\n");
 	system("pause");
 }
